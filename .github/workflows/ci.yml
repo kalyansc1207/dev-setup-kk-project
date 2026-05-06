@@ -19,12 +19,9 @@ jobs:
 
       - name: Install dependencies
         run: |
-          echo "Current directory:"
-          pwd
-          echo "Files here:"
-          ls -la
+
           python -m pip install --upgrade pip
-          pip install -r ./requirements.txt || echo "Skipping requirements"
+          echo "No dependencies needed"
 
       - name: Run script
         run: python hello.py
